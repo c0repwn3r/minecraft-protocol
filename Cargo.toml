@@ -6,7 +6,7 @@ edition = "2018"
 build = "build/build.rs"
 
 [dependencies]
-minecraft-packet-derive = {path="../minecraft-packet-derive"}
+minecraft-packet-derive = { package = "minecraft-protocol-derive", version = "0.1.0", git = "https://github.com/c0repwn3r/minecraft-protocol-derive" }
 
 [build-dependencies]
 minreq = {version="2.3", features=["https"]}
